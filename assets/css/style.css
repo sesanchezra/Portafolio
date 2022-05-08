@@ -2,8 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Open+Sans:wght@300&family=Ubuntu:wght@300;500&display=swap');
 
-
+/* -------------------------------- */
 /* ------------ PRESETS ----------- */
+/* -------------------------------- */
 
 html{
     box-sizing: border-box;
@@ -22,8 +23,9 @@ body{
     font-family: var(--font-type);
 }
 
-
+/* -------------------------------- */
 /* ---------- Variables ------------ */
+/* -------------------------------- */
 
 :root{
 
@@ -57,8 +59,9 @@ body{
 
 }
 
-
+/* -------------------------------- */
 /* -------- HEADER STYLES ------- */
+/* -------------------------------- */
 
 .header{
     width: 100%;
@@ -94,7 +97,7 @@ body{
 }
 
 .nav-menu li{
-    display: none;
+    display:none;
     line-height: 30px;
     margin: 20px 0;
     transition: all .5s;
@@ -129,7 +132,54 @@ body{
 }
 
 
+/* -------------------------------- */
 
+/* -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- */
+/* ------- MEDIA QUERIES ---------- */
+/* -------------------------------- */
+
+@media (min-width: 992px){
+    .header .navbar{
+        height: var(--navbar-desktop);
+    }
+
+    .header .navbar .bar-btn{
+        display: none;
+    }
+
+    .header .navbar .nav-menu{
+        position:relative;
+        height: var(--navbar-desktop);
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .header .navbar .nav-menu li{
+        display: inline;
+        line-height: 50px;
+        margin: 0 10px;
+        transition: none;
+    }
+
+  
+  
+}
 
 
 
@@ -152,7 +202,7 @@ body{
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+ { ... }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
@@ -162,31 +212,3 @@ body{
 
 
 
-@media screen and(min-width: 768px) {
-      .navbar{
-          height: var(--navbar-desktop);
-      }
-
-
-
-      .bar-btn{
-          display: none;
-      }
-
-      .nav-menu{
-          position:relative;
-          height: var(--navbar-desktop);
-          top:0;
-          background: none;
-          transition: none;
-          text-align: right;
-          margin-right: 40px;
-      }
-
-      .nav-menu li{
-          display: inline;
-          line-height: 100px;
-          margin: 0 20px;
-          transition: none;
-      }
-}
