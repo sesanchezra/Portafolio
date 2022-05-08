@@ -49,6 +49,8 @@ body{
     --secondary-color: #D1CECA;
     --tertiary-color: #34B0BE;
     --white-color: #ffffff;
+    --img-color: #42465f;
+    
 
     /*------ Navbar-height----- */
 
@@ -56,6 +58,10 @@ body{
     --navbar-desktop: 150px;
     --pplegable-nav: 350px;
 
+    /* ----- Banner ----- */
+
+    --banner-mobile: 800px;
+    
 
 }
 
@@ -133,10 +139,43 @@ body{
 
 
 /* -------------------------------- */
-
+/* ------------ BANNER ------------ */
 /* -------------------------------- */
 
+.banner{
+    height: var(--banner-mobile);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    color:var(--white-color);
+}
 
+
+
+.banner .banner-content .banner-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background-color: var(--img-color);
+}
+
+.banner .banner-content .banner-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 150px;
+}
+
+.banner .banner-experience{
+    width:400px;
+    height:80px;
+    border-radius: 15px;
+    background-color: var(--img-color);
+}
+
+.banner .banner-programs .banner-experience-logos{
+    display: flex;
+    flex-direction: row;
+}
 
 
 
