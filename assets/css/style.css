@@ -217,6 +217,13 @@ body{
 
 
 
+/* ------ DIVIDER --------- */
+
+
+
+
+
+
 
 
 
@@ -306,6 +313,10 @@ body{
 
     .banner .banner-svg{
         top: -40px;
+    }
+
+    .banner .banner-svg-2{
+        top:150px;
     }
 
     
