@@ -37,7 +37,7 @@ body{
 
     /* ------- Web-Font ------ */
 
-    --title-font: 150px;
+    --title-font: 80px;
     --subtitle-font:50px;
     --subsection-font: 45px;
     --body-font: 18px;
@@ -52,12 +52,13 @@ body{
     /*------ Navbar-height----- */
 
     --navbar-mobile: 60px;
-    --navbar-desktop: 150px;
+    --navbar-desktop: 100px;
     --plegable-nav: 350px;
 
     /* ----- Banner ----- */
 
     --banner-mobile: 550px;
+    --banner-desktop: 1000px;
     
 
 }
@@ -109,8 +110,7 @@ body{
 
 .nav-menu li a{
     color:var(--tertiary-color);
-    font-size:15px;
-    text-transform: uppercase   ;
+    font-size:18px;
     font-weight: 800;
 
 }
@@ -211,9 +211,7 @@ body{
 }
 
 .banner .banner-svg img{
-    width: 100%;
-    
-    
+    width: 100%; 
 }
 
 
@@ -236,6 +234,8 @@ body{
 }
 
 @media (min-width: 992px){
+
+    /*---------- HEADER -------- */
     .header .navbar{
         height: var(--navbar-desktop);
     }
@@ -260,6 +260,57 @@ body{
         margin: 0 10px;
         transition: none;
     }
+
+    .nav-menu{
+        display:flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .nav-menu li a{ 
+        font-size:20px;
+    }
+
+    /* ------- BANNER --------- */
+
+    .banner{
+        height: 100vh;
+    }
+
+    .banner .banner-content .banner-title{
+        margin: 30px 0;
+    }
+    
+    .banner .banner-content .banner-title p{
+        color:var(--secondary-color);
+        font-size: var(--subtitle-font);
+    }
+    
+    .banner .banner-content .banner-title h1{
+        font-size: var(--title-font);
+    }
+
+    .banner .banner-content .banner-image{
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+        margin-top:70px
+        
+    }
+    
+    .banner .banner-content .banner-image img{
+        height: 100%;
+        width: 100%;
+        border-radius: 200px;
+    }
+
+    .banner .banner-svg{
+        top: -40px;
+    }
+
+    
+    
+    
 
   
   
