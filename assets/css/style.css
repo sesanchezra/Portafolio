@@ -2,6 +2,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&family=Open+Sans:wght@300&family=Rubik:wght@400;500;600&family=Ubuntu:wght@300;500&display=swap');
 /* -------------------------------- */
+/* ---------- Variables ------------ */
+/* -------------------------------- */
+
+:root{
+
+    --font-type: 'Montserrat', sans-serif;
+    /* ------ Mobile-font ------ */
+    --title-font-mobile: 40px;
+    --subtitle-font-mobile:25px;
+    --subsection-font-mobile: 18px;
+    --body-font-mobile: 16px;
+
+    /* ------- Web-Font ------ */
+
+    --title-font: 80px;
+    --subtitle-font:50px;
+    --subsection-font: 45px;
+    --body-font: 24px;
+
+    /* ------- Colors ------ */
+
+    --primary-color: #020403;
+    --secondary-color: #ADADAD;
+    --tertiary-color: #ffffff;
+    
+
+    /*------ Navbar-height----- */
+
+    --navbar-mobile: 60px;
+    --navbar-desktop: 100px;
+    --plegable-nav: 350px;
+
+    /* ----- Banner ----- */
+
+    --banner-mobile: 480px;
+    --banner-desktop: 800px;
+
+    /* ------ ABOUT ME -----*/
+
+    --about-me-mobile: 350px;
+    --about-me-desktop: 700px;
+    --about-me-svg: 100px;
+    
+
+}
+
+/* -------------------------------- */
 /* ------------ PRESETS ----------- */
 /* -------------------------------- */
 
@@ -22,46 +69,7 @@ body{
     font-family: var(--font-type);
 }
 
-/* -------------------------------- */
-/* ---------- Variables ------------ */
-/* -------------------------------- */
 
-:root{
-
-    --font-type: 'Rubik', sans-serif;
-    /* ------ Mobile-font ------ */
-    --title-font-mobile: 40px;
-    --subtitle-font-mobile:25px;
-    --subsection-font-mobile: 18px;
-    --body-font-mobile: 16px;
-
-    /* ------- Web-Font ------ */
-
-    --title-font: 80px;
-    --subtitle-font:50px;
-    --subsection-font: 45px;
-    --body-font: 18px;
-
-    /* ------- Colors ------ */
-
-    --primary-color: #020403;
-    --secondary-color: #ADADAD;
-    --tertiary-color: #ffffff;
-    
-
-    /*------ Navbar-height----- */
-
-    --navbar-mobile: 60px;
-    --navbar-desktop: 100px;
-    --plegable-nav: 350px;
-
-    /* ----- Banner ----- */
-
-    --banner-mobile: 500px;
-    --banner-desktop: 1000px;
-    
-
-}
 
 /* -------------------------------- */
 /* -------- HEADER STYLES ------- */
@@ -208,21 +216,44 @@ body{
 }
 
 
+
+
 /* ------ ABOUT ME --------- */
 
 .about-me{
-    height: 400px;
+    height: auto;
     background-color: var(--primary-color);
-    background-image: url(/assets/img/svg/Group\ 99.svg);
+    position: relative;
+    
+}
+
+.about-me .about-me-svg{
+    height: var(--about-me-svg);
+    background-image: url(/assets/img/svg/Group\ 97.svg);
     background-size: contain;
     background-repeat:no-repeat;
-    background-position: 0 0;
+    background-position: -50px ;
+    z-index: 0;
 }
-.about-me h2{
+
+.about-me .about-me-container{
+    position: relative;
+    z-index:1;
+    width:85%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    top:-60px;
+    text-align: center;
+}
+
+.about-me .about-me-container h2{
     color: var(--tertiary-color);
-    padding-top: 100px ;
+    font-size: var(--subtitle-font-mobile);
+    
 }
-.about-me p{
+.about-me .about-me-container p{
+    margin-top: 10px;
     color: var(--secondary-color)
 }
 
@@ -238,6 +269,13 @@ body{
 /* ------- MEDIA QUERIES ---------- */
 /* -------------------------------- */
 @media (min-width: 500px) { 
+    /* :root{
+        --about-me-svg: 200px;
+    } */
+
+    .banner{
+        height: auto;
+    }
     .banner .banner-content .banner-image{
         height: 300px;
         width: 300px;
@@ -245,9 +283,32 @@ body{
         background-color: var(--tertiary-color);
         
     }
+
+    /* .about-me .about-me-svg{
+        background-position: -100px 0;
+    } */
+
+    .about-me .about-me-container{
+        top:-50px;
+    }
+    
+}
+
+@media (min-width: 768px){
+    :root{
+        --about-me-svg: 150px;
+    } 
+    .about-me .about-me-svg{
+        background-position: -90px 0;
+    } 
 }
 
 @media (min-width: 992px){
+
+    :root{
+        --about-me-svg: 250px;
+    }
+
 
     /*---------- HEADER -------- */
     .header .navbar{
@@ -288,7 +349,7 @@ body{
     /* ------- BANNER --------- */
 
     .banner{
-        height: 100vh;
+        height: var(--banner-desktop);
     }
 
     .banner .banner-content .banner-title{
@@ -316,6 +377,23 @@ body{
         height: 100%;
         width: 100%;
         border-radius: 200px;
+    }
+
+    /*---- ABOUT ME -------*/
+    .about-me .about-me-svg{
+        background-position: -100px ;
+    }
+    .about-me .about-me-container{
+        top:-80px;
+    }
+    .about-me .about-me-container h2{
+        font-size: var(--subtitle-font);
+        
+    }
+    .about-me .about-me-container p{
+        margin-top: 10px;
+        color: var(--secondary-color);
+        font-size:var(--body-font)
     }
 
 }
