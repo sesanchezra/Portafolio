@@ -44,6 +44,11 @@
     --about-me-mobile: 350px;
     --about-me-desktop: 700px;
     --about-me-svg: 100px;
+
+    /*------ MY SKILLS----*/
+
+    --font-icon: 60px;
+    --dim-icon:80px;
     
 
 }
@@ -67,6 +72,7 @@ html{
 
 body{
     font-family: var(--font-type);
+    background-color: var(--primary-color);
 }
 
 
@@ -258,7 +264,113 @@ body{
 }
 
 
+/* ------ My skills --------- */
 
+.my-skills .skills-svg{
+    height: var(--about-me-svg);
+    background-image: url(/assets/img/svg/Group\ 97.svg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: 110% 0% ;
+    z-index: 0;
+}
+
+.my-skills{
+    position: relative;
+    height: auto;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    top: -90px;
+}
+.my-skills .my-skills-content{
+    padding: 20px;
+}
+
+.my-skills .my-skills-tittle{
+    text-align: center;
+    font-size: var(--subsection-font-mobile);
+}
+
+.my-skills .my-skills-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:auto;
+    position: relative;
+    top: 40px;
+}
+
+.my-skills .my-skills-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.my-skills .my-skills-cards .card .card-icon{
+    font-size: var(--font-icon);
+    background-color: #2e2e2e;
+    height: var(--dim-icon);
+    width: var(--dim-icon);
+    border-radius: calc(var(--dim-icon)/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-skills .my-skills-cards .card h3{
+    margin: 7px;
+    font-size: var(--subsection-font-mobile);
+}
+
+/* ----- My work ------- */
+
+.my-work .about-me-svg{
+    height: var(--about-me-svg);
+    background-image: url(/assets/img/svg/Group\ 97.svg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: -50px ;
+    z-index: 0;
+}
+
+.my-work{
+    position: relative;
+    top:-60px;
+}
+
+.my-work .my-work-tittle{
+    color:var(--tertiary-color);
+    text-align: center;
+    font-size: var(--subsection-font-mobile);
+}
+
+.my-work .my-work-cards{
+    display:flex;
+    flex-direction: column;
+    width: 85%;
+    margin:auto;
+}
+
+.my-work .my-work-cards .card-work{
+    margin:20px 0 0 0;
+    position: relative;
+    
+}
+
+.my-work .my-work-cards .card-work img{
+    width: 100%;
+    z-index:0;
+    border-radius: 20px;
+}
+
+/* .my-work .my-work-cards .card-work span{
+    position: absolute;
+    color: var(--primary-color);
+    z-index:2;
+    right: 20px;
+    bottom: 20px;
+    font-size: var(--subtitle-font-mobile);
+} */
 
 
 
@@ -272,6 +384,11 @@ body{
     /* :root{
         --about-me-svg: 200px;
     } */
+
+    :root{
+        --dim-icon: 100px;
+        --font-icon:80px;
+    }
 
     .banner{
         height: auto;
@@ -291,6 +408,29 @@ body{
     .about-me .about-me-container{
         top:-50px;
     }
+
+    .about-me .about-me-container h2{
+        font-size: 30px; 
+    }    
+
+    .my-skills .my-skills-tittle{
+        font-size: 24px;
+    }
+
+    .my-skills .my-skills-cards .card h3{
+        font-size: var(--subtitle-font-mobile);
+    }
+    
+    .my-work .my-work-cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .my-work .my-work-tittle{
+        
+        font-size: var(--subtitle-font-mobile);
+    }
+
     
 }
 
@@ -307,7 +447,11 @@ body{
 
     :root{
         --about-me-svg: 250px;
+        --dim-icon: 150px;
+        --font-icon:100px;
     }
+
+    
 
 
     /*---------- HEADER -------- */
@@ -394,6 +538,23 @@ body{
         margin-top: 10px;
         color: var(--secondary-color);
         font-size:var(--body-font)
+    }
+
+    .my-skills{
+        top: -110px;
+    }
+    .my-skills .my-skills-tittle{
+        font-size: var(--subtitle-font);
+    }
+
+    .my-skills .my-skills-cards .card h3{
+        
+        font-size: var(--subsection-font);
+    }
+
+    .my-work .my-work-tittle{
+        
+        font-size: var(--subtitle-font);
     }
 
 }
