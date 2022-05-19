@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,41 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Sebastian Sanchez</title>
 </head>
-<body>
-    <div class="header">
-        <div class="navbar">
-            <input type="checkbox"  id="check">
-            <label for="check" class="bar-btn">
-              <i class='bx bx-menu'></i>
-            </label>
 
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#my-skills">My skills</a></li>
-                <li><a href="#my-work">My Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body>
+    <header class="navbar">
+        <div class="navbar__container">
+          
+    
+          <!-- navegación -->
+          <nav class="navbar__nav">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#about-me" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#my-skills" class="navbar__link">My Skills</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#my-work" class="navbar__link">My Work</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#contact" class="navbar__link">Contact</a>
+              </li>
             </ul>
+          </nav>
+    
+          <!-- menu boton -->
+          <div class="navbar__btn">
+            <button id="navbarBtn" class="navbar__btn-link">
+              <i class='bx bx-menu navbar__logo-icon'></i>
+            </button>
+          </div>
         </div>
-    </div>
+      </header>
 
     <div class="banner">
         <div class="banner-content">
@@ -41,22 +60,24 @@
             <div class="banner-experience-logos">
                 <i class='bx bxl-nodejs'></i>
                 <i class='bx bxl-react'></i>
-                <i class='bx bxl-python' ></i>
+                <i class='bx bxl-python'></i>
 
             </div>
         </div>
         <!-- <div class="banner-svg">
             <img src="/assets/img/svg/Group 99.svg" frameborder="0"></img>
         </div> -->
-       
+
     </div>
 
-    <div id="about-me"class="about-me" >
+    <div id="about-me" class="about-me">
         <div class="about-me-svg">
         </div>
         <div class="about-me-container">
             <h2>About me</h2>
-            <p>I`m a Frontend and Backend developer, with passion for impact the world, with simple and effective solutions, that people could love. <br><br> I´m characterized by my empathy, value that power my hability to understand the clients problems, and give me tools to create innovative solutions.</p>
+            <p>I`m a Frontend and Backend developer, with passion for impact the world, with simple and effective
+                solutions, that people could love. <br><br> I´m characterized by my empathy, value that power my
+                hability to understand the clients problems, and give me tools to create innovative solutions.</p>
         </div>
     </div>
 
@@ -76,13 +97,13 @@
                 </div>
                 <div class="card">
                     <div class="card-icon">
-                        <i class='bx bxl-nodejs' ></i>
+                        <i class='bx bxl-nodejs'></i>
                     </div>
                     <h3>Node js</h3>
                 </div>
                 <div class="card">
                     <div class="card-icon">
-                        <i class='bx bxl-python' ></i>
+                        <i class='bx bxl-python'></i>
                     </div>
                     <h3>Python</h3>
                 </div>
@@ -126,9 +147,9 @@
 
     <div id="contact" class="contact">
         <div class="contact-title">
-            <h2 >Contact Me</h2>
+            <h2>Contact Me</h2>
         </div>
-        
+
         <div class="contact-content">
             <div class="card">
                 <div class="card-icon">
@@ -150,6 +171,8 @@
     <div class="footer">
         <p>Made with </p>
     </div>
-    
+
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
