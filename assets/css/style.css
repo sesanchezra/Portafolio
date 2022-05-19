@@ -535,7 +535,15 @@ body{
     .contact .contact-content .card p{
         font-size: 20px;
         color: var(--secondary-color)
-     }
+    }
+    .navbar .navbar__container .navbar__btn{
+        display: none;
+    }
+
+    .navbar .navbar__container .navbar__nav{
+        margin-right: 50px;
+    }
+
 }
 
 @media (min-width: 992px){
@@ -546,43 +554,43 @@ body{
         --font-icon:100px;
     }
 
-    
-
-
     /*---------- HEADER -------- */
-    .header .navbar{
+    .navbar{
+        height: var(--navbar-desktop);
+    }
+    .navbar .navbar__container{
         height: var(--navbar-desktop);
     }
 
-    .header .navbar .bar-btn{
+    .navbar .navbar__container .navbar__btn{
         display: none;
     }
 
-    .header .navbar .nav-menu{
+    .navbar .navbar__container .navbar__nav{
         position:relative;
         height: var(--navbar-desktop);
         top:0;
         background: none;
         transition: none;
         text-align: right;
-        margin-right: 40px;
+        margin-right: 50px;
     }
 
-    .header .navbar .nav-menu li{
+    .navbar .navbar__container .navbar_nav .navbar__list{
         display: inline;
         line-height: 50px;
         margin: 0 10px;
         transition: none;
     }
 
-    .nav-menu{
+    .navbar__nav{
         display:flex;
         justify-content: right;
         align-items: center;
     }
 
-    .nav-menu li a{ 
-        font-size:20px;
+    .navbar__link {
+        font-size: 20px;
     }
 
     /* ------- BANNER --------- */

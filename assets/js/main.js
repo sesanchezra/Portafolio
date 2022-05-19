@@ -7,3 +7,8 @@ navbarBtn.addEventListener('click', function (e) {
   navbarNav.classList.toggle('active')
 })
 // end navbar btn menu
+
+// Seleccionar navbar item para que al dar click se cierre todo
+
+// const navbarItem= document.querySelector('.navbar__item')
+// console.log(navbarItem);
