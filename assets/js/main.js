@@ -12,6 +12,6 @@ navbarBtn.addEventListener('click', function (e) {
 
 navbarNav.addEventListener('click', function (e) {
     if (e.target.closest('.navbar__item')) {
-        navbarNav.classList.toggle('active')
+        navbarNav.classList.remove('active')
     }
 })
