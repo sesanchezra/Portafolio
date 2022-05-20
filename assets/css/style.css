@@ -98,7 +98,7 @@ body{
   
   .navbar__list {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     padding: 0;
     margin: 0;
